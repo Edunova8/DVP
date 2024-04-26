@@ -8177,7 +8177,7 @@ if (jQuery) {
                 if ($.isPlainObject(unitToEnable)) {
                   unitToEnable.inverted = true;
                   matchFound = unitToEnable;
-                } else if ($.isArray(unitToEnable)) {
+                } else if (Array.isArray(unitToEnable)) {
                   matchFound = unitToEnable;
                   if (!matchFound[3]) matchFound.push('inverted');
                 } else if (_.isDate(unitToEnable)) {
